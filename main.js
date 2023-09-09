@@ -36,6 +36,9 @@ btn.appendChild(eraseBtn);
 clearBtn.className = "clear-button";
 clearBtn.style.cssText = "border-radius: 10px; padding: 10px 30px; cursor: pointer;";
 clearBtn.textContent = "clear";
+clearBtn.onclick = function () {
+    reset();
+}
 btn.appendChild(clearBtn);
 
 // create grid container
@@ -67,6 +70,7 @@ function changeSize(input) {
         }
         createGrid(input);
     } else {
+        alert("You input invalid size it should not exceed to 100 and below 2");
         console.log("error");
     }
 }
@@ -80,5 +84,6 @@ function changeColor (choice) {
 // Reset the grid container
 
 function reset () {
-    
+    let board = document.querySelector('.container');
+    board.childNodes.forEach((square) => square.style.backgroundColor = "white");
 }
