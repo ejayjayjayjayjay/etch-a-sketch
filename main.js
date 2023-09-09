@@ -86,6 +86,7 @@ function changeSize(input) {
 // event for changing color
 function colorSquare () {
     if (color === "random") {
+        // generate random colors
         var randomColor = Math.floor(Math.random()*16777215).toString(16);
         this.style.backgroundColor = "#"+randomColor;
     } else {
@@ -93,7 +94,7 @@ function colorSquare () {
     }
 }
 
-// change the color hover
+// change the color by choosing button
 function changeColor (choice) {
     color = choice;
     console.log(`Selected color: ${color}`);
