@@ -7,7 +7,7 @@ let clearBtn = document.createElement('button');
 
 // add black button into the DOM
 blackBtn.className = "black-button";
-blackBtn.style.cssText = "margin: 20px 10px 0 0; border-radius: 10px; padding: 10px 30px; cursor: pointer;";
+blackBtn.style.cssText = "background-color: #0a0a23; color: #fff; margin: 20px 10px 0 0; border-radius: 10px; padding: 10px 30px; cursor: pointer;";
 blackBtn.textContent = "Black";
 blackBtn.onclick = function () {
     changeColor("black");
@@ -16,7 +16,7 @@ btn.appendChild(blackBtn);
 
 // add gray button into the DOM
 grayBtn.className = "gray-button";
-grayBtn.style.cssText = "margin: 20px 10px 0 0; border-radius: 10px; padding: 10px 30px; cursor: pointer;";
+grayBtn.style.cssText = "background-color: #0a0a23; color: #fff; margin: 20px 10px 0 0; border-radius: 10px; padding: 10px 30px; cursor: pointer;";
 grayBtn.textContent = "Gray";
 grayBtn.onclick = function () {
     changeColor("gray");
@@ -25,7 +25,7 @@ btn.appendChild(grayBtn);
 
 // add erase button into the DOM
 eraseBtn.className = "erase-button";
-eraseBtn.style.cssText = "margin: 20px 10px 0 0; border-radius: 10px; padding: 10px 30px; cursor: pointer;";
+eraseBtn.style.cssText = "background-color: #0a0a23; color: #fff; margin: 20px 10px 0 0; border-radius: 10px; padding: 10px 30px; cursor: pointer;";
 eraseBtn.textContent = "Erase";
 eraseBtn.onclick = function () {
     changeColor("white");
@@ -34,7 +34,7 @@ btn.appendChild(eraseBtn);
 
 // add erase button into the DOM
 clearBtn.className = "clear-button";
-clearBtn.style.cssText = "border-radius: 10px; padding: 10px 30px; cursor: pointer;";
+clearBtn.style.cssText = "background-color: #0a0a23; color: #fff; border-radius: 10px; padding: 10px 30px; cursor: pointer;";
 clearBtn.textContent = "clear";
 clearBtn.onclick = function () {
     reset();
