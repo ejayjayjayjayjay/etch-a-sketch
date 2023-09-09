@@ -13,18 +13,13 @@
     height: 100vh;
 }
 
-#section > h1 {
-    position: absolute;
-    top: 50px;
-    left: 50%;
-    transform: translate(-50%);
-    font-size: 4em;
-}
-
 .container {
     width: 600px;
     height: 600px;
+    margin-top: 50px;
     display: grid;
-    z-index: 100;
 }
 
+.setSize {
+    margin-top: 20px;
+}
